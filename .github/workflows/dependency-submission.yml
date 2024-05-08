@@ -1,6 +1,9 @@
 name: Dependency Submission
 
-on: [ push ]
+on:
+  push:
+    paths: [ '/src','/gradle','/.github','**.kt','**.kts' ]
+    paths-ignore: [ '**.md' ]
 
 permissions:
   contents: write
