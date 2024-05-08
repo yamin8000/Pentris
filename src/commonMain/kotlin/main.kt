@@ -19,7 +19,7 @@ suspend fun main() = Korge(
 
 class MyScene : Scene() {
     override suspend fun SContainer.sceneMain() {
-        val minDegrees = (-16).degrees
+        val minDegrees = (-32).degrees
         val maxDegrees = (+16).degrees
 
         val image = image(resourcesVfs["korge.png"].readBitmap()) {
