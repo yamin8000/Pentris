@@ -2,7 +2,7 @@ name: "🧪 Testing"
 
 on:
   push:
-    paths: [ '/src','/gradle','/.github','**.kt','**.kts' ]
+    paths: [ '/src/**','/gradle/**','/.github/**','**.kt','**.kts' ]
 
 env:
   JAVA_DISTRIBUTION: zulu

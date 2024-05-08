@@ -2,7 +2,7 @@ name: "🚀 Deploy JS"
 
 on:
   push:
-    paths: [ '/src','/gradle','/.github','**.kt','**.kts' ]
+    paths: [ '/src/**','/gradle/**','/.github/**','**.kt','**.kts' ]
   workflow_dispatch:
 
 env:

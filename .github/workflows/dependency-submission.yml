@@ -2,7 +2,7 @@ name: Dependency Submission
 
 on:
   push:
-    paths: [ '/src','/gradle','/.github','**.kt','**.kts' ]
+    paths: [ '/src/**','/gradle/**','/.github/**','**.kt','**.kts' ]
 
 permissions:
   contents: write
