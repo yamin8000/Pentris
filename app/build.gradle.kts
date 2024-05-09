@@ -5,7 +5,7 @@ plugins {
 
 private val composeLibsVersion = "1.6.7"
 private val composeUiLibsVersion = "1.6.7"
-private val composeCompilerVersion = "1.5.12"
+private val composeCompilerVersion = "1.5.13"
 
 android {
     namespace = "io.github.yamin8000.pentris"
