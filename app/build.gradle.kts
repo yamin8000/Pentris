@@ -68,8 +68,9 @@ android {
 }
 
 dependencies {
-    //core android
+    //android/kotlin core
     implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.core:core-splashscreen:1.0.1")
     //compose core
     debugImplementation("androidx.compose.ui:ui-tooling:$composeUiLibsVersion")
     implementation("androidx.compose.ui:ui:$composeUiLibsVersion")
@@ -85,5 +86,5 @@ dependencies {
     //compose navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")
     //datastore
-    implementation("androidx.datastore:datastore-preferences:1.1.1")
+    //implementation("androidx.datastore:datastore-preferences:1.1.1")
 }
