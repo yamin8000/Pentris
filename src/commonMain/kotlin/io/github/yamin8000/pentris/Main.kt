@@ -1,19 +1,25 @@
+package io.github.yamin8000.pentris
+
+import io.github.yamin8000.pentris.util.*
 import korlibs.time.*
 import korlibs.korge.*
 import korlibs.korge.scene.*
 import korlibs.korge.tween.*
 import korlibs.korge.view.*
-import korlibs.image.color.*
 import korlibs.image.format.*
 import korlibs.io.file.std.*
+import korlibs.korge.time.*
 import korlibs.math.geom.*
 import korlibs.math.interpolation.*
+import kotlin.time.*
 
 suspend fun main() = Korge(
-    backgroundColor = Colors["#ff0000"]
+    backgroundColor = Constants.BACKGROUND
 ) {
     val sceneContainer = sceneContainer()
 
+    sceneContainer.changeTo { Splash() }
+    delay(Duration.fromSeconds(3))
     sceneContainer.changeTo { MyScene() }
 }
 
