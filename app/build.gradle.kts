@@ -1,18 +1,37 @@
+/*
+ *     Pentris/Pentris.app
+ *     build.gradle.kts Copyrighted by Yamin Siahmargooei at 2024/5/9
+ *     build.gradle.kts Last modified at 2024/5/9
+ *     This file is part of Pentris/Pentris.app.
+ *     Copyright (C) 2024  Yamin Siahmargooei
+ *
+ *     Pentris/Pentris.app is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     Pentris/Pentris.app is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with Pentris.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
 
-private val composeLibsVersion = "1.6.7"
-private val composeUiLibsVersion = "1.6.7"
-private val composeCompilerVersion = "1.5.12"
-
 android {
-    namespace = "io.github.yamin8000.pentris"
+    val appId = "io.github.yamin8000.pentris"
+
+    namespace = appId
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "io.github.yamin8000.pentris"
+        applicationId = appId
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -53,6 +72,7 @@ android {
     }
 
     composeOptions {
+        val composeCompilerVersion = "1.5.13"
         kotlinCompilerExtensionVersion = composeCompilerVersion
     }
 
@@ -72,6 +92,8 @@ dependencies {
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.core:core-splashscreen:1.0.1")
     //compose core
+    val composeUiLibsVersion = "1.6.7"
+    val composeLibsVersion = "1.6.7"
     debugImplementation("androidx.compose.ui:ui-tooling:$composeUiLibsVersion")
     implementation("androidx.compose.ui:ui:$composeUiLibsVersion")
     implementation("androidx.compose.ui:ui-tooling-preview:$composeUiLibsVersion")
