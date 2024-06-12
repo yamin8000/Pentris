@@ -93,7 +93,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("androidx.compose.ui:ui-text-google-fonts:1.6.7")
     //compose core
-    val composeUiLibsVersion = "1.6.7"
+    val composeUiLibsVersion = "1.6.8"
     val composeLibsVersion = "1.6.7"
     debugImplementation("androidx.compose.ui:ui-tooling:$composeUiLibsVersion")
     implementation("androidx.compose.ui:ui:$composeUiLibsVersion")
